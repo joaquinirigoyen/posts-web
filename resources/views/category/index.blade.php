@@ -7,7 +7,14 @@
   <title>Index | PWA</title>
 </head>
 <body>
+  <a href="category/create">Crear Nuevo Post</a>
   <h1>Listado de categorías</h1>
-  
+  <ul>
+  @foreach ($posts as $post)
+      <li>
+        <a href="/category/show/{{$post->id}}">{{ $post->title}}
+          </a>
+  @endforeach
+  </ul>
 </body>
 </html>

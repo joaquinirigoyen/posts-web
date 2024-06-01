@@ -14,6 +14,8 @@ Route::get('/logout', function(){
 });
 Route::get('/category', [CategoryController::class,'getIndex']);
 
+Route::post('category', CategoryController::class, 'store');
+
 Route::get('/category/show/{id}', [CategoryController::class, 'getShow']);
 
 Route::get('category/create', [CategoryController::class, 'getCreate']);

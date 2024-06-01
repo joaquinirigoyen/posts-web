@@ -3,17 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Post;
 
 class CategoryController extends Controller
 {
     public function getIndex(){
-      return view('category.index');
+      $posts = Post::all();
+      
+      return view('category.index', compact('posts'));
       
 
     }
 
     public function getShow($id){
-      return view('category.show', compact('id'));
+      $post = Post::find($id);
+      
+      return view('category.show', compact('post'));
       
       
     }
@@ -29,4 +34,6 @@ class CategoryController extends Controller
       
 
     }
+
+    public function store()
 }

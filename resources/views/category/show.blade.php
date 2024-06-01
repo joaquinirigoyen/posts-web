@@ -7,7 +7,16 @@
   <title>Category | PWA</title>
 </head>
 <body>
-  <h1>Vista detalle del post {{$id}}</h1>
-  
+  <h1>Titulo "{{$post->title}}"</h1>
+  <p>
+    <b>Poster: </b>{{$post->poster}}
+  </p>
+  <p>
+    <b>Contenido: </b>{{$post->content}}
+  </p>
+  <p>
+    <b>Habilitado: </b>{{$post->habilitated}}
+  </p>
+  <a href="/category">Volver</a>
 </body>
 </html>
