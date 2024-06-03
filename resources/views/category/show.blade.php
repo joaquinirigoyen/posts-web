@@ -17,6 +17,11 @@
   <p>
     <b>Habilitado: </b>{{$post->habilitated}}
   </p>
-  <a href="/category">Volver</a>
+  <a href="{{route('category.index')}}">Volver</a> <a href="{{route('category.edit',$post->id)}}">Editar</a> 
+  <form action="{{route('category.show',$post->id)}}" method="post">
+    @csrf
+      @method('delete')
+      <button type="submit">Eliminar Post</button>
+  </form>
 </body>
 </html>

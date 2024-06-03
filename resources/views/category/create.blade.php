@@ -8,7 +8,7 @@
 </head>
 <body>
   <h1>Formulario para crear nuevo Post</h1>
-  <form action="/category" method="post">
+  <form action="{{route('category.store')}}" method="post">
     @csrf {{-- Token para evitar suplantacion de datos --}}
     <label>Titulo:
       <input type="text" name="title">
