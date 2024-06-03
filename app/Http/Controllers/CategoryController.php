@@ -35,5 +35,14 @@ class CategoryController extends Controller
 
     }
 
-    public function store()
+    public function store(Request $request){
+      $post = new Post();
+      $post->title = $request->title;
+      $post->poster = $request->poster;
+      $post->habilitated = false;
+      $post->content = $request->content;
+      $post->save();
+      
+
+    }
 }

@@ -11,7 +11,7 @@
   <form action="/category" method="post">
     @csrf {{-- Token para evitar suplantacion de datos --}}
     <label>Titulo:
-      <input type="text" name="titulo">
+      <input type="text" name="title">
     </label>
     <br>
     <br>
