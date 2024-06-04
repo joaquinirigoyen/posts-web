@@ -39,7 +39,10 @@ class CategoryController extends Controller
 
     public function store(Request $request){
       $request->validate([
-        'title' =>['required', 'min:5', 'max:255']
+        'title' =>['required', 'min:5', 'max:255'],
+        'poster' =>['required', 'min:5', 'max:255'],
+        'content' =>['required', 'min:5']
+
       ]);
       $post = new Post();
       $post->title = $request->title;
