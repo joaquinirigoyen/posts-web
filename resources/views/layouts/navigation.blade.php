@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-white dark:bg-gray-700 border-b border-gray-100 dark:border-gray-700">
+<nav x-data="{ open: false }" class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -6,7 +6,8 @@
                 <!-- Logo -->
                 <div class="shrink-0 ">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />
+                        
+                      <img src="{{ asset('storage/app/public/img/logo.png') }}" alt="logo" border="0" width="50" height="50">
                     </a>
                 </div>
 
@@ -15,12 +16,12 @@
               
                 <div class="hidden  space-x-8 sm:-my-px sm:ms-10 sm:flex">
                   <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                      {{ __('Post') }}
+                      {{ __('Posts') }}
                   </x-nav-link>
               </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('category.index')" :active="request()->routeIs('category.index')">
-                        {{ __('Mis Post') }}
+                        {{ __('Mis Posts') }}
                     </x-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">

@@ -24,11 +24,9 @@
     <div class="container mx-auto px-6 py-12 text-center relative">
         <div class="bg-white shadow-lg rounded-lg overflow-hidden absolute custom-top left-5 w-1/3 h-auto p-4">
             <div class="relative z-10 px-4 py-6 sm:px-6 lg:px-8">
-                <h1 class="text-4xl font-bold text-gray-800 mb-4">A beautiful extension for TailwindCSS.</h1>
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">Comunidad de Aprendizaje y Discusión.</h1>
                 <p class="text-lg text-gray-600 mb-6">
-                    Tailwind Starter Kit is Free and Open Source. It does not change or add any CSS to the already
-                    one from TailwindCSS. It features multiple HTML elements and it comes with dynamic components
-                    for ReactJS, Vue and Angular.
+                  Explora, comparte y aprende en nuestra plataforma de posteos. Publica tus artículos, sé parte de una comunidad que valora el conocimiento y la colaboración.
                 </p>
                 <div class="flex justify-center">
                     <a href="{{ route('login') }}"

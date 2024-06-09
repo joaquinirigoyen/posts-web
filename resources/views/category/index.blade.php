@@ -1,20 +1,19 @@
 <x-app-layout>
-    <x-slot name="header">
+    {{-- <x-slot name="header">
 
         <h1 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">Listado posts</h1>
 
 
-    </x-slot>
+    </x-slot> --}}
     <!-- component -->
     <div class="py-1">
         <div class="flex justify-center items-center">
             <div class="container p-3">
                 <div class="mx-auto max-w-4xl sm:text-center">
                     <img src="assets/images/landing/index-21.png" class="w-40 mx-auto" alt="">
-                    <h2 class="md:text-5xl text-3xl font-semibold tracking-tight">Services We provide</h2>
+                    <h2 class="md:text-5xl text-3xl font-semibold tracking-tight">Tu Espacio para Postear y Aprender</h2>
                     <div class="flex justify-center">
-                        <p class="md:w-1/2 mt-6 text-xl/8 font-medium text-gray-500 dark:text-gray-400">We specialise in
-                            organising professional training courses.</p>
+                        <p class="md:w-1/2 mt-6 text-xl/8 font-medium text-gray-700 dark:text-gray-600">Un lugar donde tus palabras tienen poder. Publica tus pensamientos, lee los de otros. Únete a nuestra red de conocimiento y creatividad.</p>
                     </div>
                 </div>
 
@@ -29,15 +28,17 @@
                             'bg-pink-600',
                             'bg-teal-600',
                             'bg-indigo-600',
+                            'bg-teal-600',
+                            'bg-sky-600',
+                            
                         ];
                     @endphp
                     @foreach ($posts as $index => $post)
                         <div>
 
-                            <div
-                                class="p-7 rounded-xl {{ $colors[$index % count($colors)] }} h-64 flex flex-col justify-between overflow-hidden">
+                            <div class="p-7 rounded-xl {{ $colors[$index % count($colors)] }} shadow-lg  h-64 flex flex-col justify-between overflow-hidden">
                                 <div class="flex-grow overflow-hidden">
-                                    <h3 class="text-xl font-semibold mb-7">{{ $post->title }}</h3>
+                                    <h3 class="text-xl font-semibold mb-7 text-center">{{ $post->title }}</h3>
                                     <p
                                         class="font-medium leading-7 text-gray-700 mb-6 dark:text-gray-500 overflow-hidden text-ellipsis">
                                         {{ $post->content }}

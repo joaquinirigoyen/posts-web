@@ -5,7 +5,7 @@
   <div class="w-full bg-white-700 h-full">
     <div class="h-80"></div>
     <div class="max-w-5xl mx-auto px-6 sm:px-6 lg:px-8 mb-12">
-        <div class="bg-gray-900 w-full shadow-black rounded p-8 sm:p-12 -mt-72">
+        <div class="bg-gray-900 w-full custom-shadow rounded p-8 sm:p-12 -mt-72">
             <p class="text-3xl font-bold leading-7 text-center text-white">Mi Post</p>
             <form action="{{route('category.show',$post->idpost) }}" method="post">
                 @csrf {{-- Token para evitar suplantacion de datos --}}

@@ -1,13 +1,13 @@
 <x-app-layout>
-    <x-slot name="header">
+    {{-- <x-slot name="header">
         <h1 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">Formulario nuevo Post</h1>
-    </x-slot>
+    </x-slot> --}}
 
     <!-- component -->
     <div class="w-full bg-white-700 h-full">
         <div class="h-80"></div>
         <div class="max-w-5xl mx-auto px-6 sm:px-6 lg:px-8 mb-12">
-            <div class="bg-gray-900 w-full shadow-2xl shadow-blue-500/50 rounded p-8 sm:p-12 -mt-72">
+            <div class="bg-gray-900 w-full custom-shadow shadow-blue-500/50 rounded p-8 sm:p-12 -mt-72">
                 <p class="text-3xl font-bold leading-7 text-center text-white">Mi Post</p>
                 <form action="{{ route('category.store') }}" method="post">
                     @csrf {{-- Token para evitar suplantacion de datos --}}

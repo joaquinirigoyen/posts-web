@@ -21,6 +21,9 @@
               background-size: cover;
               
           }
+          .custom-shadow {
+            box-shadow: 0 60px 60px rgba(59, 130, 246, 0.5); /* Azul con mayor sombra */
+        }
   
           .custom-top {
               top: 320px;

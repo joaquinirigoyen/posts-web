@@ -19,6 +19,9 @@
               background-size: cover;
               
           }
+          .custom-shadow {
+            box-shadow: 0 25px 50px rgba(59, 130, 246, 0.5); /* Azul con mayor sombra */
+        }
         /* .bg-pattern {
             background: url('https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/register_bg_2.png') no-repeat center center;
             background-size: cover;
@@ -46,7 +49,7 @@
         </nav>
         <div>
             <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-700" />
+              <img src="{{ asset('storage/app/public/img/logo.png') }}" alt="logo" border="0" width="50" height="50">
             </a>
         </div>
 
