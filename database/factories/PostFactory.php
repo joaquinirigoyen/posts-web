@@ -18,9 +18,10 @@ class PostFactory extends Factory
     {
         return [
             'title'=> $this->faker->sentence(), /**Genera una oracion */
-            'poster'=> $this->faker->word(), /**Genera una palabra */
+            
             'habilitated'=> false,
-            'content'=> $this->faker->text(500), /**Genera un parrafo con 300 caracteres */
+            'content'=> $this->faker->text(700), /**Genera un parrafo con 300 caracteres */
+            'iduser'=> $this->faker->numberBetween(1,20), /**Genera un numero aleatorio entre 1 y 10 */
             
 
 

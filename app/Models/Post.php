@@ -7,7 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Post extends Model
 {
-  protected $table = 'posts'; /* Sirve para aclarar q esta clase va a trabajar con la tabla post */
+  protected $table = 'posts';   /* Sirve para aclarar q esta clase va a trabajar con la tabla post */
+  protected $primaryKey = 'idpost';
     use HasFactory;
 
     protected function title(): Attribute
@@ -28,5 +29,9 @@ class Post extends Model
         'created_at'=>'datetime',
         'update_at'=>'datetime'
       ];
+    }
+
+    public function users(){
+      return $this->belongsTo(User::class);
     }
 }
