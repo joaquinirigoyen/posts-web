@@ -17,13 +17,13 @@ class PostFactory extends Factory
     public function definition(): array
     {
         return [
-            'title'=> $this->faker->sentence(), /**Genera una oracion */
-            
-            'habilitated'=> false,
-            'content'=> $this->faker->text(700), /**Genera un parrafo con 300 caracteres */
-            'iduser'=> $this->faker->numberBetween(1,20), /**Genera un numero aleatorio entre 1 y 10 */
-            
-
+            'title' => $this->faker->sentence(),
+            /**Genera una oracion */
+            'habilitated' => false,
+            'content' => $this->faker->text(700),
+            /**Genera un parrafo con 300 caracteres */
+            'iduser' => $this->faker->numberBetween(1, 20),
+            /**Genera un numero aleatorio entre 1 y 10 */
 
         ];
     }
